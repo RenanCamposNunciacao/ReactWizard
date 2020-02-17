@@ -39,7 +39,6 @@ export const actionCreators = {
         dispatch({ type: finishedSaveUserAddressesType, save_useraddress_result });
     },
     loadUserAddress: userAddressId => async (dispatch, getState) => {
-        console.log('loadUserAddress');
         dispatch({ type: loadUserAddressType, userAddressId });
     },
     finishedLoadUserAddress: () => async (dispatch, getState) => {
@@ -99,8 +98,6 @@ export const reducer = (state, action) => {
     }
 
     if (action.type === loadUserAddressType) {
-        console.log(action.userAddressId);
-        console.log(state.userAddresses_list);
         return {
             ...state,
             userAddress: state.userAddresses_list.filter(userAddress => userAddress.id === action.userAddressId)[0]

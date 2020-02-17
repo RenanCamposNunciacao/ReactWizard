@@ -25,10 +25,6 @@ class UserAddressesList extends Component {
     }
 
     componentDidUpdate() {
-        //console.log('change list');
-        //console.log(this.props.current_user);
-        //console.log(this.state.userId);
-        // This method is called when the route parameters change
         this.ensureDataFetched((this.props.userAddress.id !== this.state.userAddressId || this.props.current_user !== this.state.userId || this.props.updateAddresses));
         if (this.props.userAddress.id !== this.state.userAddressId || this.props.current_user !== this.state.userId)
             this.setState({ ...this.state, userAddressId: this.props.userAddress.id, userId: this.props.current_user });
