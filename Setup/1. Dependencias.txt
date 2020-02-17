@@ -1,0 +1,2 @@
+O projeto foi criado utilizando Nuget e NPM para gerenciamento de depêndencias, é necessário realizar a restauração dos pacotes
+nos respectivos gerenciadores para que a solução compile normalmente

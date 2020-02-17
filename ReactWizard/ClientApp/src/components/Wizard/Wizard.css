@@ -1,0 +1,39 @@
+﻿body {
+}
+.WizardNav {
+    width: 100%;
+    background-color: #515151;
+    padding: 0!important;
+}
+.btnUser, .btnUserAddresses {
+    width: 50%;
+    border-radius: 5px 5px 0 0;
+    border: 1px solid #373737;
+    background-color: gray;
+    color: white;
+}
+.btnUser.active, .btnUserAddresses.active {
+    background-color: #515151;
+}
+
+.StepContainer {
+    border-radius: 0 0 5px 5px;
+    border: 1px solid #373737;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.SectionHeader {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+}
+
+svg.MuiSvgIcon-root{
+    cursor: pointer;
+    margin-right:10px;
+    border: 1px solid #000;
+}

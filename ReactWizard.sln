@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactWizard", "ReactWizard\ReactWizard.csproj", "{36331714-B428-4F70-AE47-5961A84345E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReactWizard", "ReactWizard\ReactWizard.csproj", "{36331714-B428-4F70-AE47-5961A84345E9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReactWizard.Core", "ReactWizard.Core\ReactWizard.Core.csproj", "{F43DB95C-1C8A-44DD-A816-E87F3725DB2A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Setup", "Setup", "{5E851ABF-8C80-4C09-A114-BB5892A0B895}"
+	ProjectSection(SolutionItems) = preProject
+		Setup\1. Dependencias.txt = Setup\1. Dependencias.txt
+		Setup\2. Database.txt = Setup\2. Database.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +23,10 @@ Global
 		{36331714-B428-4F70-AE47-5961A84345E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36331714-B428-4F70-AE47-5961A84345E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36331714-B428-4F70-AE47-5961A84345E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F43DB95C-1C8A-44DD-A816-E87F3725DB2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F43DB95C-1C8A-44DD-A816-E87F3725DB2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F43DB95C-1C8A-44DD-A816-E87F3725DB2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F43DB95C-1C8A-44DD-A816-E87F3725DB2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

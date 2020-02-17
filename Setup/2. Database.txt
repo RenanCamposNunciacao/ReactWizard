@@ -1,0 +1,30 @@
+1 - Executar os comandos SQL abaixo em um banco MySQL para que sejam criadas as tabelas User e UserAddress.
+
+CREATE TABLE `user` (
+	`Id` INT(11) NOT NULL AUTO_INCREMENT,
+	`Name` VARCHAR(100) NULL DEFAULT NULL,
+	`BirthDate` DATETIME NULL DEFAULT NULL,
+	`Telephone` VARCHAR(15) NULL DEFAULT NULL,
+	`Cellphone` VARCHAR(15) NULL DEFAULT NULL,
+	`Email` VARCHAR(100) NULL DEFAULT NULL,
+	PRIMARY KEY (`Id`)
+);
+
+CREATE TABLE `useraddress` (
+	`Id` INT(11) NOT NULL AUTO_INCREMENT,
+	`UserId` INT(11) NOT NULL DEFAULT '0',
+	`Street` VARCHAR(50) NULL DEFAULT NULL,
+	`Number` INT(10) NULL DEFAULT NULL,
+	`District` VARCHAR(100) NULL DEFAULT NULL,
+	`City` VARCHAR(100) NULL DEFAULT NULL,
+	`State` VARCHAR(100) NULL DEFAULT NULL,
+	`Country` VARCHAR(100) NULL DEFAULT NULL,
+	PRIMARY KEY (`Id`),
+	INDEX `IdUser` (`UserId`),
+	CONSTRAINT `FK_useraddress_user` FOREIGN KEY (`UserId`) REFERENCES `user` (`Id`)
+);
+
+2 - O arquivo ReactWizard/appsettings.json dever ser alterado para utilizar a string de conexão do banco que será usado para o teste.
+
+Obs: A string que deve ser alterada é a "ReactWizard"
+
